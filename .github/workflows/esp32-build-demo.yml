@@ -25,5 +25,5 @@ jobs:
       with:
         name: test_fw.bin
         path: |
-          hello_world/build/test_fw.bin
+          hello_world/build/hello_world.bin
 
