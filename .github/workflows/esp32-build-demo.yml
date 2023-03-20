@@ -15,3 +15,15 @@ jobs:
         esp_idf_version: v4.4
         target: esp32
         path: 'hello_world'
+
+    - name: List build artifacts
+      run: |
+        ls -l build/
+
+    - name: Store artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: test_fw.bin
+        path: |
+          hello_world/build/test_fw.bin
+
