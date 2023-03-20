@@ -16,9 +16,6 @@ jobs:
         target: esp32
         path: 'hello_world'
 
-    - name: List build artifacts
-      run: |
-        ls -l build/
 
     - name: Store artifacts
       uses: actions/upload-artifact@v2
